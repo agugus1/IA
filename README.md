@@ -288,8 +288,122 @@ Personas con **bajo neuroticismo**:
 
 El **Big Five** es uno de los **modelos de personalidad más aceptados en psicología científica** y se usa para:
 
+---
+
+# 📊 Análisis de Datos (Data Analysis)
+
+El **análisis de datos** es el proceso de **examinar, limpiar, transformar e interpretar datos** con el objetivo de **extraer información útil, encontrar patrones y apoyar la toma de decisiones**.
+
+Se utiliza en muchas áreas como:
+
+- Negocios
+- Ciencia
+- Inteligencia Artificial
+- Marketing
+- Medicina
+- Finanzas
+- Investigación científica
+
+La idea principal es **convertir datos crudos en conocimiento útil**.
+
+---
+
+# 🔄 Proceso de Análisis de Datos
+
+Generalmente el análisis de datos sigue una serie de pasos.
+
+## 1️⃣ Recolección de Datos
+
+Es la etapa donde se obtienen los datos desde distintas fuentes.
+
+Ejemplos de fuentes:
+
+- Bases de datos
+- APIs
+- Encuestas
+- Sensores
+- Archivos CSV o Excel
+- Sitios web
+
+Ejemplo:
+
+
 - Evaluaciones psicológicas
 - Selección laboral
 - Estudios de comportamiento
 - Investigación en ciencias sociales
-```
+
+---
+
+# 📊 DataFrame vs Dataset
+
+En el análisis de datos y la ciencia de datos, es común escuchar los términos **Dataset** y **DataFrame**.  
+Aunque están relacionados, **no significan exactamente lo mismo**.
+
+---
+
+# 📦 ¿Qué es un Dataset?
+
+Un **Dataset (conjunto de datos)** es una **colección de datos organizada** que puede contener información sobre un tema específico.
+
+Puede almacenarse en diferentes formatos como:
+
+- CSV
+- Excel
+- JSON
+- Bases de datos
+- Archivos de texto
+
+Un dataset puede contener:
+
+- Filas (observaciones)
+- Columnas (variables)
+- Diferentes tipos de datos
+
+## Ejemplo de Dataset
+
+| Nombre | Edad | Ciudad |
+|------|------|------|
+| Ana | 25 | Madrid |
+| Luis | 30 | Buenos Aires |
+| Marta | 22 | Lima |
+
+En este caso:
+
+- **Filas** → personas  
+- **Columnas** → características de esas personas
+
+---
+
+# 🧱 ¿Qué es un DataFrame?
+
+Un **DataFrame** es una **estructura de datos utilizada en programación** para trabajar con datasets de manera eficiente.
+
+Es muy común en herramientas de análisis de datos como:
+
+- Python (Pandas)
+- R
+- Spark
+
+Un DataFrame funciona como **una tabla en memoria**, similar a una hoja de Excel o una tabla de base de datos.
+
+Características:
+
+- Tiene **filas y columnas**
+- Cada columna puede tener **un tipo de dato diferente**
+- Permite **filtrar, ordenar y transformar datos**
+
+## Ejemplo en Python
+
+```python
+import pandas as pd
+
+data = {
+    "Nombre": ["Ana", "Luis", "Marta"],
+    "Edad": [25, 30, 22],
+    "Ciudad": ["Madrid", "Buenos Aires", "Lima"]
+}
+
+df = pd.DataFrame(data)
+
+print(df)
