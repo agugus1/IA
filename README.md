@@ -385,6 +385,55 @@ Es muy común en herramientas de análisis de datos como:
 - R
 - Spark
 
+# Tipos de Inteligencia Artificial
+
+La **Inteligencia Artificial (IA)** se puede clasificar principalmente según su **capacidad** y su **funcionamiento**.
+
+## 1. Según su capacidad
+
+### IA Débil o Estrecha (ANI)
+Es la IA diseñada para realizar **una tarea específica**.  
+No tiene conciencia ni inteligencia general.
+
+**Ejemplos:**
+- Asistentes virtuales
+- Sistemas de recomendación
+- Reconocimiento facial
+
+### IA General (AGI)
+Sería una IA capaz de **entender, aprender y realizar cualquier tarea intelectual** que pueda hacer un humano.  
+Aún **no existe en la actualidad**.
+
+### Superinteligencia Artificial (ASI)
+Sería una IA que **superaría la inteligencia humana en todos los aspectos**.  
+Es solo **teórica por ahora**.
+
+---
+
+## 2. Según su funcionamiento
+
+### Máquinas Reactivas
+Responden a estímulos actuales, **sin memoria ni aprendizaje de experiencias pasadas**.
+
+### Memoria Limitada
+Pueden **aprender de datos pasados** durante cierto tiempo para mejorar decisiones.
+
+### Teoría de la Mente
+IA hipotética que podría **entender emociones, creencias e intenciones humanas**.
+
+### Autoconciencia
+Sería una IA con **conciencia propia** y comprensión de su existencia.  
+Actualmente **no existe**.
+
+---
+
+## Resumen
+
+| Tipo | Estado actual |
+|-----|---------------|
+| IA Débil (ANI) | Existe y se usa hoy |
+| IA General (AGI) | En investigación |
+| Superinteligencia (ASI) | Teórica |
 Un DataFrame funciona como **una tabla en memoria**, similar a una hoja de Excel o una tabla de base de datos.
 
 Características:
@@ -406,4 +455,137 @@ data = {
 
 df = pd.DataFrame(data)
 
+print(df)
+
+# Librerías de Python: Pandas, Matplotlib y NumPy
+
+## Pandas
+**Pandas** se utiliza para **manipular y analizar datos** de forma fácil.
+
+Permite:
+- Leer archivos de datos (CSV, Excel, JSON, etc.)
+- Organizar datos en tablas llamadas **DataFrames**
+- Filtrar, limpiar y transformar datos
+- Analizar grandes conjuntos de datos
+
+**Ejemplo de uso:** análisis de datos, ciencia de datos, procesamiento de información.
+
+---
+
+## NumPy
+**NumPy** se usa para **cálculos numéricos y matemáticos eficientes**.
+
+Permite:
+- Trabajar con **arreglos (arrays)** multidimensionales
+- Realizar operaciones matemáticas rápidas
+- Manejar matrices y álgebra lineal
+- Procesar grandes cantidades de números
+
+**Ejemplo de uso:** cálculos científicos, inteligencia artificial, análisis numérico.
+
+---
+
+## Matplotlib
+**Matplotlib** se utiliza para **crear gráficos y visualizaciones de datos**.
+
+Permite:
+- Crear gráficos de líneas
+- Gráficos de barras
+- Histogramas
+- Gráficos de dispersión
+
+**Ejemplo de uso:** visualizar resultados de análisis de datos o experimentos.
+
+---
+
+## Resumen
+
+| Librería | Para qué sirve |
+|--------|----------------|
+| Pandas | Análisis y manipulación de datos |
+| NumPy | Cálculos matemáticos y arrays |
+| Matplotlib | Visualización y gráficos de datos |
+
+```markdown
+# ¿Qué es un archivo CSV?
+
+Un **CSV (Comma-Separated Values)** es un tipo de archivo que **guarda datos en forma de tabla** usando texto plano.
+
+Cada línea del archivo representa **una fila de datos**, y los valores están **separados por comas** (aunque a veces pueden usarse otros separadores como `;`).
+
+## Ejemplo de un CSV
+
+```
+
+nombre,edad,ciudad
+Ana,25,Córdoba
+Luis,30,Buenos Aires
+María,22,Rosario
+
+```
+
+### Cómo funciona
+- **Primera fila:** nombres de las columnas.
+- **Filas siguientes:** los datos.
+- **Comas:** separan cada valor.
+
+## Para qué se usan
+
+Los archivos CSV se utilizan para:
+- Guardar **datos tabulares**
+- Intercambiar datos entre programas
+- Importar y exportar datos en **Excel, Python, bases de datos, etc.**
+
+## Ventajas
+- Son **simples y ligeros**
+- Se pueden abrir con **Excel, Google Sheets o un editor de texto**
+- Son muy usados en **análisis de datos y programación**
+```
+
+
+# ¿Qué es un DataFrame?
+
+Un **DataFrame** es una **estructura de datos en forma de tabla** que se usa para organizar y analizar información.
+
+Es muy común en la librería **Pandas de Python**.
+
+## Características
+
+- Los datos se organizan en **filas y columnas**.
+- Cada columna puede contener **un tipo de dato diferente** (números, texto, fechas, etc.).
+- Permite **filtrar, ordenar, modificar y analizar datos fácilmente**.
+
+## Ejemplo de DataFrame
+
+| nombre | edad | ciudad |
+|------|------|------|
+| Ana | 25 | Córdoba |
+| Luis | 30 | Buenos Aires |
+| María | 22 | Rosario |
+
+En este ejemplo:
+- **Columnas:** nombre, edad, ciudad  
+- **Filas:** cada persona registrada
+
+## Para qué se usa
+
+Los **DataFrames** se utilizan para:
+
+- Análisis de datos
+- Ciencia de datos
+- Limpieza de datos
+- Manipulación de grandes conjuntos de información
+- Lectura de archivos como **CSV o Excel**
+
+## Ejemplo en Python
+
+```python
+import pandas as pd
+
+datos = {
+    "nombre": ["Ana", "Luis", "María"],
+    "edad": [25, 30, 22]
+}
+
+df = pd.DataFrame(datos)
 print(df)
